@@ -1,0 +1,23 @@
+﻿@model LogisticsCompanyViewModel
+@{ 
+    var cssClass = "form-group CssHide";
+    if (Model.inputData.logisticsCompany > 0)  {
+        cssClass = "form-group CssDispaly";
+    }
+}
+<script>
+    const configData = @Json.Serialize(Model.configData);
+</script>
+<form>
+    <div class="form-group">
+        <label for="ControlSelectLogisticsCompany" id="lblLogisticsCompany"> @Resources.GetString("LogisticsCompany") </label>
+        <select id="ControlSelectLogisticsCompany" class="form-control" asp-items="@(new SelectList(Model.companyData, "Value", "Text"))"
+                asp-for="@Model.inputData.logisticsCompany" onchange="LogisticsCompany.OnChangeLogisticsCompany(this.value)">
+            <option value="" id="ddlSelectOptions">--@Resources.GetString("Select") --</option>
+        </select>
+    </div>
+    <div class="@cssClass" id="LogisticsCompanyInfo">
+        @await Html.PartialAsync("~/Views/Shared/LogisticsCompany/Index.cshtml", Model)
+    </div>
+</form>
+

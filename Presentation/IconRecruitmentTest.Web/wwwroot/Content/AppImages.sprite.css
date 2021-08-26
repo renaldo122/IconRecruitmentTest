@@ -1,0 +1,13 @@
+/*
+This is an example of how to use the image sprite in your own CSS files
+*/
+.appimages {
+	background-image: url('AppImages.sprite.png');
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+.appimages.icon_logo {
+	width: 40px;
+	height: 40px;
+	background-position: -10px -10px;
+}

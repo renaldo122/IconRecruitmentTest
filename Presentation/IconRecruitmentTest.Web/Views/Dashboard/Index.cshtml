@@ -1,0 +1,36 @@
+﻿@model DashboardViewModel
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script>
+    const companyOrderData = @Json.Serialize(Model.companyOrderData);
+    const titleOrder = @Json.Serialize(Resources.GetString("ShippingActivitiesBasedOnNumberOfOrders"));
+    const titlePrice = @Json.Serialize(Resources.GetString("ShippingActivitiesBasedOnTotalPrice"));
+    const lblInfoPrice = @Json.Serialize(Resources.GetString("TotalPrice"));
+    
+</script>
+<div id="DashboardInfoData">
+    <form role="form" class="form-horizontal" id="DashboardInfoDataForm">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="d-flex justify-container-left">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="activitiesBasedOnOrder" style="width: 600px; height: 600px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex justify-container-right">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="activitiesBasedOnTotalPrice" style="width: 600px; height: 600px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+

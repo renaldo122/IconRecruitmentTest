@@ -1,0 +1,6 @@
+bin/
+obj/
+.vs/
+packages/
+
+Presentation/IconRecruitmentTest.Web/App_Data/LOG/

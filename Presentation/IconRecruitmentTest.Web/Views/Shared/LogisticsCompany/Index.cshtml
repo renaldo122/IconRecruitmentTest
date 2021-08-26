@@ -1,0 +1,102 @@
+﻿@using IconRecruitmentTest.Web.Extensions
+@using IconRecruitmentTest.Common.Common
+@model LogisticsCompanyViewModel
+
+@{ Layout = null; }
+
+<div id="LogisticsCompanyInfoData">
+    <form role="form" class="form-horizontal" id="LogisticsCompanyInfoDataForm">
+        <div class="company-data">
+            <div class="container">
+                <div class="messages"></div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="clearfix CssLabelCalculations"> <p>@Resources.GetString("CalculationsBasedOnDimensions") @Html.ButtonInfoElement("DimensionsPrices", Model, (int)ParcelType.Dimensions, (int)CompanyInfo.ParcelInfo)</p> </div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                @Html.LabelDisplayName("form_lbl_width", @Resources.GetString("Width"))
+                                @Html.InputElementNumber("form_width", @Resources.GetString("Width"), Model, (int)ParcelType.Dimensions,Model.inputData.width)
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                @Html.LabelDisplayName("form_lbl_height", @Resources.GetString("Height"))
+                                @Html.InputElementNumber("form_height", @Resources.GetString("Height"), Model, (int)ParcelType.Dimensions,Model.inputData.height)
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                @Html.LabelDisplayName("form_lbl_depth", @Resources.GetString("Depth"))
+                                @Html.InputElementNumber("form_depth", @Resources.GetString("Depth"), Model, (int)ParcelType.Dimensions,Model.inputData.depth)
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <p></p><br>
+                                <div class="clearfix CssLabelCalculations"> <p> @Html.ButtonInfoElement("DimensionsValidation", Model, (int)ParcelType.Dimensions, (int)CompanyInfo.ParcelValidation)</p> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="clearfix CssLabelCalculations"> <p>@Resources.GetString("CalculationsBasedOnWeight")  @Html.ButtonInfoElement("WeightPrices", Model, (int)ParcelType.Weight, (int)CompanyInfo.ParcelInfo)</p> </div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                @Html.LabelDisplayName("form_lbl_weight", @Resources.GetString("Weight"))
+                                @Html.InputElementNumber("form_weight", @Resources.GetString("Weight"), Model, (int)ParcelType.Weight,Model.inputData.weight)
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <p></p><br>
+                                <div class="clearfix CssLabelCalculations"> <p> @Html.ButtonInfoElement("WeightValidation", Model, (int)ParcelType.Weight, (int)CompanyInfo.ParcelValidation)</p> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix CssLabelCalculations">@Resources.GetString("TotalCalculated")</div> <br />
+                <div class="controls">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            @Html.LabelDisplayName("form_lbl_volume", @Resources.GetString("Volume"))
+                            @Html.LabelDisplayName("form_total_volume", "0")
+                            @Html.LabelDisplayName("form_dec_volume", "Cm3")
+                        </div>
+                        <div class="col-sm-3">
+                            @Html.LabelDisplayName("form_lbl_weight", @Resources.GetString("Weight"))
+                            @Html.LabelDisplayName("form_total_weight", "0")
+                            @Html.LabelDisplayName("form_kg_volume", "Kg")
+                        </div>
+                        <div class="col-sm-3">
+                            @Html.LabelDisplayName("form_lbl_cost", @Resources.GetString("Cost"))
+                            @Html.LabelDisplayName("form_total_cost", "0")
+                            @Html.LabelDisplayName("form_Eu_volume", "€")
+                        </div>
+                        <div class="col-sm-3">
+                            <button type="button" id="BtnSendShipping" class="btn btn-primary" disabled onclick="LogisticsCompany.SaveShipping()">@Resources.GetString("SendShipping")</button>
+                        </div>
+                    </div>
+                </div>
+                <br />
+            </div>
+        </div>
+    </form>
+</div>
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="popover"]').popover({
+            placement: 'right',
+            trigger: 'hover'
+        });
+    });
+</script>

@@ -1,0 +1,35 @@
+﻿@model AccountViewModel
+
+<div class="row" style="display: flex; justify-content: center;">
+    <div class="col-md-8">
+        <section>
+            <form method="post" role="form" class="form-horizontal">
+                @Html.AntiForgeryToken()
+                <h4 id="lblLoginInfo"> @Resources.GetString("UseALocalAccountToLogIn")</h4>
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <div class="form-group">
+                    <label for="Username" id="lblUsername" class="col-md-4 control-label">@Resources.GetString("Username") </label>
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(m => m.loginModel.Username, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.loginModel.Username, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="Username" id="lblPassword" class="col-md-4 control-label">@Resources.GetString("Password") </label>
+                    <div class="col-md-10">
+                        @Html.PasswordFor(m => m.loginModel.Password, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.loginModel.Password, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <button type="submit" asp-page-handler="LogIn" class="btn btn-primary">@Resources.GetString("Login")</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+</div> 

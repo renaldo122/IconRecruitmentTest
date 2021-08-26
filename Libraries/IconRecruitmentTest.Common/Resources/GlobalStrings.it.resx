@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AnErrorOccurredPleaseTryAgain" xml:space="preserve">
+    <value>An error occurred! Please try again!</value>
+  </data>
+  <data name="BasedOnDimensions" xml:space="preserve">
+    <value>In base alle dimensioni</value>
+  </data>
+  <data name="BasedOnWeight" xml:space="preserve">
+    <value>In base al peso:</value>
+  </data>
+  <data name="CalculatePrice" xml:space="preserve">
+    <value>Calcola prezzo</value>
+  </data>
+  <data name="CalculationsBasedOnDimensions" xml:space="preserve">
+    <value>Calcoli basati sulle dimensioni:</value>
+  </data>
+  <data name="CalculationsBasedOnWeight" xml:space="preserve">
+    <value>Calcoli basati sul peso:</value>
+  </data>
+  <data name="Cargo4YouValidationDimension" xml:space="preserve">
+    <value>Il volume totale deve essere inferiore a 2000 cm3&lt;/br&gt; Larghezza x altezza x profondità calcolata</value>
+  </data>
+  <data name="Cargo4YouValidationWeight" xml:space="preserve">
+    <value>Il peso dovrebbe essere inferiore a 20Kg</value>
+  </data>
+  <data name="Cost" xml:space="preserve">
+    <value>Costo</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Pannello di controllo</value>
+  </data>
+  <data name="Depth" xml:space="preserve">
+    <value>Profondità</value>
+  </data>
+  <data name="Dimensions_Between_1000cm_and_1700cm" xml:space="preserve">
+    <value>Qualsiasi pacco &gt; 1000 cm3 e &lt;= 1700 cm3 costa € 21.99</value>
+  </data>
+  <data name="Dimensions_Between_1000cm_and_2000cm" xml:space="preserve">
+    <value>Qualsiasi pacco &gt; 1000 cm3 e &lt;= 2000 cm3 costa € 20</value>
+  </data>
+  <data name="Dimensions_Between_2000cm_and_5000cm" xml:space="preserve">
+    <value>Qualsiasi pacco &gt; 2000 cm3 e &lt;= 5000 cm3 costa € 48.50</value>
+  </data>
+  <data name="Dimensions_Less_Than_1000cm" xml:space="preserve">
+    <value>Qualsiasi pacco &lt;= 1000cm3 costa € 10</value>
+  </data>
+  <data name="Dimensions_Over_5000cm" xml:space="preserve">
+    <value>Qualsiasi pacco &gt; 5000cm3 costa €147.50</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>Altezza</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Pagina iniziale</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LogisticsCompany" xml:space="preserve">
+    <value>Azienda logistica</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Esci</value>
+  </data>
+  <data name="MaltaShipValidationDimension" xml:space="preserve">
+    <value>Il volume totale deve essere maggiore di 500 cm3&lt;/br&gt; Larghezza x altezza x profondità calcolata</value>
+  </data>
+  <data name="MaltaShipValidationWeight" xml:space="preserve">
+    <value>Il peso dovrebbe essere maggiore di 10Kg</value>
+  </data>
+  <data name="MSHDimensions_Between_1000cm_and_2000cm" xml:space="preserve">
+    <value>Qualsiasi pacco &gt; 1000 cm3 e &lt;= 2000 cm3 costa € 19.50</value>
+  </data>
+  <data name="MSHDimensions_Less_Than_1000cm" xml:space="preserve">
+    <value>Qualsiasi pacco &lt;= 1000 cm3 costa € 9.50</value>
+  </data>
+  <data name="MSHWeight_Between_10kg_and_20kg" xml:space="preserve">
+    <value>Qualsiasi pacco &gt; 10Kg e &lt;= 20Kg costa € 16.99</value>
+  </data>
+  <data name="NoInfo" xml:space="preserve">
+    <value>Nessuna informazione</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>gli password</value>
+  </data>
+  <data name="PleaseEnterYour" xml:space="preserve">
+    <value>Perfavore Inserisci il tuo</value>
+  </data>
+  <data name="Prices" xml:space="preserve">
+    <value>Prezzi</value>
+  </data>
+  <data name="SavedSuccessfully" xml:space="preserve">
+    <value>Salvato con successo!</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Selezionare</value>
+  </data>
+  <data name="SendShipping" xml:space="preserve">
+    <value>Invia spedizione</value>
+  </data>
+  <data name="SHF_Dimensions_Less_Than_1000cm" xml:space="preserve">
+    <value>Qualsiasi pacco &lt;= 1000 cm3 costa € 11.99</value>
+  </data>
+  <data name="ShipFasterValidationDimension" xml:space="preserve">
+    <value>Il volume totale deve essere inferiore a 1700 cm3&lt;/br&gt; Larghezza x altezza x profondità calcolata</value>
+  </data>
+  <data name="ShipFasterValidationWeight" xml:space="preserve">
+    <value>Il peso dovrebbe essere compreso tra 10 kg e 30 kg</value>
+  </data>
+  <data name="ShippingActivitiesBasedOnNumberOfOrders" xml:space="preserve">
+    <value>Attività di spedizione in base al numero di ordini</value>
+  </data>
+  <data name="ShippingActivitiesBasedOnTotalPrice" xml:space="preserve">
+    <value>Attività di spedizione in base al prezzo totale</value>
+  </data>
+  <data name="TotalCalculated" xml:space="preserve">
+    <value>Totale calcolato:</value>
+  </data>
+  <data name="TotalPrice" xml:space="preserve">
+    <value>Prezzo totale</value>
+  </data>
+  <data name="UseALocalAccountToLogIn" xml:space="preserve">
+    <value>Usa un account locale per accedere.</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Nome utente</value>
+  </data>
+  <data name="UsernameOrPasswordIsIncorrect" xml:space="preserve">
+    <value>Nome utente o password non sono corretti!</value>
+  </data>
+  <data name="Validation" xml:space="preserve">
+    <value>Convalida</value>
+  </data>
+  <data name="Volume" xml:space="preserve">
+    <value>Volume:</value>
+  </data>
+  <data name="Weight" xml:space="preserve">
+    <value>Il peso:</value>
+  </data>
+  <data name="Weight_Between_10kg_and_15kg" xml:space="preserve">
+    <value>Qualsiasi pacco &gt; 10Kg e &lt;= 15Kg costa € 16.50</value>
+  </data>
+  <data name="Weight_Between_15kg_and_25kg" xml:space="preserve">
+    <value>Qualsiasi pacco &gt; 15 Kg e &lt;= 25Kg costa € 36.50</value>
+  </data>
+  <data name="Weight_Between_20kg_and_30kg" xml:space="preserve">
+    <value>Qualsiasi pacco &gt; 20Kg e &lt;= 30Kg costa € 33.99</value>
+  </data>
+  <data name="Weight_Between_2kg_and_15kg" xml:space="preserve">
+    <value>Qualsiasi pacco &gt; 2Kg e &lt;= 15Kg costa 18€</value>
+  </data>
+  <data name="Weight_Between_Than_15kg_and_20kg" xml:space="preserve">
+    <value>Qualsiasi pacco &gt; 15Kg e &lt;= 20Kg costa 35€</value>
+  </data>
+  <data name="Weight_Less_Than_2kg" xml:space="preserve">
+    <value>Ogni pacco &lt;= 2Kg costa 15€</value>
+  </data>
+  <data name="Weight_Over_25kg" xml:space="preserve">
+    <value>Ogni pacco &gt; 25Kg costa 40€ più 0.417€ per ogni Kg oltre i 25Kg</value>
+  </data>
+  <data name="Weight_Over_30kg" xml:space="preserve">
+    <value>Ogni pacco &gt; 30Kg costa 43.99€ più 0.41€ per ogni Kg oltre i 25Kg</value>
+  </data>
+  <data name="Width" xml:space="preserve">
+    <value>Larghezza:</value>
+  </data>
+</root>
