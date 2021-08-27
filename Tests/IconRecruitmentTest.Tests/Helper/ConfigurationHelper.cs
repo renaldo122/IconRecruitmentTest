@@ -8,6 +8,8 @@ namespace IconRecruitmentTest.Tests.Helper
         #region Fields
         public static string NumberOfCompany => ConfigurationRoot[nameof(NumberOfCompany)];
         public static string NumberOfSupportedLanguages => ConfigurationRoot[nameof(NumberOfSupportedLanguages)];
+        public static string UserNameData => ConfigurationRoot[nameof(UserNameData)];
+        public static string UserNameDataNotFound => ConfigurationRoot[nameof(UserNameDataNotFound)];
         
         #endregion
 
@@ -16,6 +18,7 @@ namespace IconRecruitmentTest.Tests.Helper
         public static IConfigurationRoot ConfigurationRoot { get; private set; }
 
         #endregion
+
         #region Methods
         /// <summary>
         /// Build Configuration

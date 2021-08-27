@@ -25,12 +25,18 @@ function drawBarChart() {
 
     var lblInfoPriceTxt = (!jQuery.isEmptyObject(LogisticsCompany.State.ResourceObject)) ? LogisticsCompany.State.ResourceObject.TotalPrice : lblInfoPrice;
 
-    dataMode.push(['Company', lblInfoPriceTxt + ' €']);
+    if (companyOrderData.length > 0) dataMode.push(['Company', lblInfoPriceTxt + ' €']);
+
     Object.keys(companyOrderData).forEach(function (key) {
         dataMode.push([companyOrderData[key].companyName, companyOrderData[key].totalPrice]);
     });
     var data = google.visualization.arrayToDataTable(dataMode);
 
+    if (companyOrderData.length == 0) {
+        data.addColumn('string', 'Company');
+        data.addColumn('number', lblInfoPriceTxt + ' €');
+    }
+    
     var titlePriceTxt = (!jQuery.isEmptyObject(LogisticsCompany.State.ResourceObject)) ? LogisticsCompany.State.ResourceObject.ShippingActivitiesBasedOnTotalPrice : titlePrice;
 
     var options = {

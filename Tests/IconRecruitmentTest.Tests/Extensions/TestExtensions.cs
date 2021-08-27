@@ -31,5 +31,35 @@ namespace IconRecruitmentTest.Tests.Extensions
             Assert.AreNotEqual(expected, actual);
             return actual;
         }
+
+        /// <summary>
+        /// ShouldNull
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public static T ShouldNull<T>(this T obj)
+        {
+            Assert.IsNull(obj);
+            return obj;
+        }
+
+        /// <summary>
+        /// ShouldBeTrue
+        /// </summary>
+        /// <param name="source"></param>
+        public static void ShouldBeTrue(this bool source)
+        {
+            Assert.IsTrue(source);
+        }
+
+        /// <summary>
+        /// ShouldBeFalse
+        /// </summary>
+        /// <param name="source"></param>
+        public static void ShouldBeFalse(this bool source)
+        {
+            Assert.IsFalse(source);
+        }
     }
 }

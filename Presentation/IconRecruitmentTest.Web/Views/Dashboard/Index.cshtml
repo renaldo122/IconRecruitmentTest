@@ -1,7 +1,5 @@
 ﻿@model DashboardViewModel
 
-
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script>
     const companyOrderData = @Json.Serialize(Model.companyOrderData);
     const titleOrder = @Json.Serialize(Resources.GetString("ShippingActivitiesBasedOnNumberOfOrders"));

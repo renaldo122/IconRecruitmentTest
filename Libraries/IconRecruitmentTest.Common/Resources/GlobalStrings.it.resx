@@ -129,12 +129,6 @@
   <data name="CalculatePrice" xml:space="preserve">
     <value>Calcola prezzo</value>
   </data>
-  <data name="CalculationsBasedOnDimensions" xml:space="preserve">
-    <value>Calcoli basati sulle dimensioni:</value>
-  </data>
-  <data name="CalculationsBasedOnWeight" xml:space="preserve">
-    <value>Calcoli basati sul peso:</value>
-  </data>
   <data name="Cargo4YouValidationDimension" xml:space="preserve">
     <value>Il volume totale deve essere inferiore a 2000 cm3&lt;/br&gt; Larghezza x altezza x profondità calcolata</value>
   </data>
@@ -175,7 +169,7 @@
     <value>Login</value>
   </data>
   <data name="LogisticsCompany" xml:space="preserve">
-    <value>Azienda logistica</value>
+    <value>Fornitore</value>
   </data>
   <data name="Logout" xml:space="preserve">
     <value>Esci</value>
@@ -215,6 +209,12 @@
   </data>
   <data name="SendShipping" xml:space="preserve">
     <value>Invia spedizione</value>
+  </data>
+  <data name="SetTheDimensions" xml:space="preserve">
+    <value>Imposta le dimensioni:</value>
+  </data>
+  <data name="SetTheWeight" xml:space="preserve">
+    <value>Imposta il peso:</value>
   </data>
   <data name="SHF_Dimensions_Less_Than_1000cm" xml:space="preserve">
     <value>Qualsiasi pacco &lt;= 1000 cm3 costa € 11.99</value>

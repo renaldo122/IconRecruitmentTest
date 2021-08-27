@@ -129,12 +129,6 @@
   <data name="CalculatePrice" xml:space="preserve">
     <value>Calculate price</value>
   </data>
-  <data name="CalculationsBasedOnDimensions" xml:space="preserve">
-    <value>Calculations based on dimensions:</value>
-  </data>
-  <data name="CalculationsBasedOnWeight" xml:space="preserve">
-    <value>Calculations based on weight:</value>
-  </data>
   <data name="Cargo4YouValidationDimension" xml:space="preserve">
     <value>Total volume should be less than 2000cm3&lt;/br&gt; Calculated  width x height x  depth</value>
   </data>
@@ -175,7 +169,7 @@
     <value>Login</value>
   </data>
   <data name="LogisticsCompany" xml:space="preserve">
-    <value>Logistics company</value>
+    <value>Supplier</value>
   </data>
   <data name="Logout" xml:space="preserve">
     <value>Logout</value>
@@ -215,6 +209,12 @@
   </data>
   <data name="SendShipping" xml:space="preserve">
     <value>Send shipping</value>
+  </data>
+  <data name="SetTheDimensions" xml:space="preserve">
+    <value>Set the dimensions:</value>
+  </data>
+  <data name="SetTheWeight" xml:space="preserve">
+    <value>Set the weight:</value>
   </data>
   <data name="SHF_Dimensions_Less_Than_1000cm" xml:space="preserve">
     <value>Any parcel &lt;= 1000cm3 costs €11.99</value>

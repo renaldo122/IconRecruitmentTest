@@ -97,24 +97,6 @@ namespace IconRecruitmentTest.Common.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Calculations based on dimensions:.
-        /// </summary>
-        public static string CalculationsBasedOnDimensions {
-            get {
-                return ResourceManager.GetString("CalculationsBasedOnDimensions", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Calculations based on weight:.
-        /// </summary>
-        public static string CalculationsBasedOnWeight {
-            get {
-                return ResourceManager.GetString("CalculationsBasedOnWeight", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Total volume should be less than 2000cm3&lt;/br&gt; Calculated  width x height x  depth.
         /// </summary>
         public static string Cargo4YouValidationDimension {
@@ -232,7 +214,7 @@ namespace IconRecruitmentTest.Common.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Logistics company.
+        ///   Looks up a localized string similar to Supplier.
         /// </summary>
         public static string LogisticsCompany {
             get {
@@ -354,6 +336,24 @@ namespace IconRecruitmentTest.Common.Resources {
         public static string SendShipping {
             get {
                 return ResourceManager.GetString("SendShipping", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set the dimensions:.
+        /// </summary>
+        public static string SetTheDimensions {
+            get {
+                return ResourceManager.GetString("SetTheDimensions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set the weight:.
+        /// </summary>
+        public static string SetTheWeight {
+            get {
+                return ResourceManager.GetString("SetTheWeight", resourceCulture);
             }
         }
         
